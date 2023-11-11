@@ -13,6 +13,8 @@
     background-color: white;
     margin: 0;
     padding: 0;
+    cursor: url(./sword.png) ;
+    /* background-image: url(/images/1000_F_574928130_bzUlO3R2TEhLKr5E9WYiOwKWWDiOtvHa.jpg); */
   }
   
   body::-webkit-scrollbar {
@@ -27,14 +29,118 @@
     background: #ffffff;
   }
   
-  main {
+  /* header {
     margin-left: 5rem;
     padding: 1rem;
-    background-image: url(https://i.postimg.cc/fWV6vYTL/https-tf-cmsv2-smithsonianmag-media-s3-amazonaws-com-filer-public-5c-3f-5c3fef18-ecda-43cf-ada1-c5.jpg);
-    min-width: 100%;
-    color: white;
+    background-image: url();
+    color: rgb(36, 23, 23);
+    height: 100px;
+    
+  } */
+
+  .loader{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/images/1000_F_574928130_bzUlO3R2TEhLKr5E9WYiOwKWWDiOtvHa.jpg);
     height: 100px;
   }
+  .glitch {
+    position: fixed;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+    animation: shift 1s ease-in-out infinite alternate;
+    font-family: 'Londrina Outline', sans-serif;
+
+  }
+  
+  .glitch:before,
+  .glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+  
+  .glitch:before {
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00000000;
+    z-index: -1;
+  }
+  
+  .glitch:after {
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #f10000;
+    z-index: -2;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+  
+    20% {
+      transform: translate(-3px, 3px);
+    }
+  
+    40% {
+      transform: translate(-3px, -3px);
+    }
+  
+    60% {
+      transform: translate(3px, 3px);
+    }
+  
+    80% {
+      transform: translate(3px, -3px);
+    }
+  
+    to {
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes shift {
+    0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+      transform: skewX(0deg);
+    }
+  
+    41% {
+      transform: skewX(10deg);
+    }
+  
+    42% {
+      transform: skewX(-10deg);
+    }
+  
+    59% {
+      transform: skewX(40deg) skewY(10deg);
+    }
+  
+    60% {
+      transform: skewX(-40deg) skewY(-10deg);
+    }
+  
+    63% {
+      transform: skewX(10deg) skewY(-5deg);
+    }
+  
+    70% {
+      transform: skewX(-50deg) skewY(-20deg);
+    }
+  
+    71% {
+      transform: skewX(10deg) skewY(-10deg);
+    }
+  }
+  
   .ONE{
     font-family: 'Londrina Outline', sans-serif;
     font-size: 5.5rem;
@@ -62,6 +168,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
+    background-image: url(/images/HD-wallpaper-iphone-for-iphone-xs-iphone-xr-and-iphone-x-iphone-graffiti-hipster-pop-art-scary-gaming.jpg);
   }
   
   .nav-item {
@@ -78,14 +185,17 @@
     height: 5rem;
     color: var(--text-primary);
     text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
+    /* filter: grayscale(100%) opacity(0.7); */
     transition: var(--transition-speed);
+    background-image: url(/images/HD-wallpaper-iphone-for-iphone-xs-iphone-xr-and-iphone-x-iphone-graffiti-hipster-pop-art-scary-gaming.jpg);
+    
   }
   
   .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
+    background-image: url(/images/HD-wallpaper-iphone-for-iphone-xs-iphone-xr-and-iphone-x-iphone-graffiti-hipster-pop-art-scary-gaming.jpg);
   }
   
   .link-text {
